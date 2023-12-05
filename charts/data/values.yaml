@@ -1,0 +1,14 @@
+image:
+  repository: postgres
+  pullPolicy: IfNotPresent
+  tag: "latest"
+persistence:
+  enabled: true
+  size: 1Gi
+service:
+  type: ClusterIP
+  port: 5432
+postgresql:
+  username: your_username
+  password: your_password
+  database: your_database

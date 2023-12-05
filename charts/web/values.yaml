@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: dellavrite/frontend
+  pullPolicy: IfNotPresent
+  tag: "0.0.1"
+
+service:
+  type: ClusterIP
+  port: 80
